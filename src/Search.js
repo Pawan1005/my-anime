@@ -74,7 +74,11 @@ export default function Search() {
                                         <AiFillHeart className='Heart' /> {p.favorites}
                                     </td>
                                     <td className='enter'>
-                                        <FaArrowRight />
+                                       <td className='enter' style={{textAlign:"center"}}>
+                                       <a href={`${p.url}`} target="_blank" style={{textDecoration:"none", color:"black" , cursor:"pointer" , }}>
+                                        <FaArrowRight  style={{fontSize:40}}/>
+                                       </a>
+                                    </td>
                                     </td>
                                 </tr>
                             </tbody>
